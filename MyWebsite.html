@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- attaching social media stylesheet-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #9933cc;          <!--#0099cc;-->
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+
+<!-- Social media styling-->
+.fa {
+  padding: 20px;
+  font-size: 100px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+</style>
+<!-- CSS ENDS HERE-->
+</head>
+<body>
+<script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+<div class="header">
+  
+  <img src="myAvatar.png" alt="Avatar" class="avatar">  <b>Jaita Dev Roy</b>
+
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+	<button onclick="myFunction()"><b>Hide/Show Menu</b></button>
+	<div id="myDIV">
+    <li>
+	<a href="MyWebsite.html">About Machine Learning</a>
+	</li>
+    <li>
+	<a href="MyWebsite_Education.html">Eduation</a>
+	</li>
+	<li>
+	<a href="MyWebsite_Skills.html">Skills</a>
+	</li>
+	<li>
+	<a href="MyWebsite_Certificates.html">Certificates</a>
+	</li><!-- OPEN THIS AND USE : https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp -->
+    <li>
+	<a href="MyWebsite_Internship.html">Internships</a>
+	</li>
+    <li>
+	<a href="MyWebsite_Work.html">Work</a>
+	</li>
+	<li>
+	<a href="MyWebsite_Blog.html">My Blog</a>
+	</li>
+	<li>
+	<a href="MyWebsite_Contact.html">Contact Details</a>
+	</li>
+	</div>
+  </ul>
+</div>
+
+<div class="col-6">
+  <h2>About ML</h2>
+  <p>Machine learning is the science of getting computers to act without being explicitly programmed. In the past decade, 
+  machine learning has given us self-driving cars, practical speech recognition, effective web search, 
+  and a vastly improved understanding of the human genome. Machine learning is so pervasive today that you probably use it dozens of times a day
+  without knowing it. Many researchers also think it is the best way to make progress towards human-level AI. In this class, you will learn about 
+  the most effective machine learning techniques, and gain practice implementing them and getting them to work for yourself. More importantly, 
+  you'll learn about not only the theoretical underpinnings of learning, but also gain the practical know-how needed to quickly and powerfully 
+  apply these techniques to new problems. Finally, you'll learn about some of Silicon Valley's best practices in innovation as it pertains to 
+  machine learning and AI.
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_sknq7GeulA_b_Gbz_dV1Kcs0lec0AKT94WCPPFxqpkoMku-0" width="460" height="345">
+
+</p>
+</div>
+
+<div class="col-3 right">
+  <div class="aside">
+    <h2>What?</h2>
+    <p>Chania is a city on the island of Crete.</p>
+    <h2>Where?</h2>
+    <p>Crete is a Greek island in the Mediterranean Sea.</p>
+    <h2>How?</h2>
+    <p>You can reach Chania airport from all over Europe.</p>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <!-- Add font awesome icons -->
+  <p>
+<a href="https://www.facebook.com/itsjoyi" >   
+<img src="facebook.png" alt="Connect with me on Facebook" class ="avatar" width="50" height="50">
+</a>
+<a href="https://www.linkedin.com/in/jaita-dev-roy-9a824aab/" >   
+<img src="In.png" alt="Connect with me on LinkedIn" class ="avatar" width="50" height="50">
+</a>
+<a href="https://www.instagram.com/joyitadevroy/?hl=en" >   
+<img src="insta.png" alt="Connect with me on Instagram" class ="avatar" width="50" height="50">
+</a>
+</p>
+
+
+</div>
+
+</body>
+</html>
