@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>for-your-perusal </title>
+	
+  <meta charset="UTF-8">
+  <meta name="description" content="Memoir">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Jaita Devroy">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+</style>
+<!-- CSS ENDS HERE-->
+</head>
+<body>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+<div class="header">
+  <h1>Jaita Dev Roy</h1>
+    <img src="myAvatar.png" alt="Avatar" class="avatar">
+
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+	<button onclick="myFunction()">Try it</button>
+		<div id="myDIV">
+
+
+  <ul>
+    <li>
+	<a href="MyWebsite.html">About Machine Learning</a>
+	</li>
+    <li>
+	<a href="MyWebsite_Education.html">Eduation</a>
+	</li>
+	<li>
+	<a href="MyWebsite_Skills.html">Skills</a>
+	</li>
+	<li>
+	<a href="MyWebsite_Certificates.html">Certificates</a>
+	</li><!-- OPEN THIS AND USE : https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp -->
+    <li>
+	<a href="MyWebsite_Internship.html">Internships</a>
+	</li>
+    <li>
+	<a href="MyWebsite_Work.html">Work</a>
+	</li>
+	<li>
+	<a href="MyWebsite_Blog.html">My Blog</a>
+	</li>
+	<li>
+	<a href="MyWebsite_Contact.html">Contact Details</a>
+	</li>
+	
+  </ul>
+  </div>
+</div>
+
+<div class="col-6">
+  <h1>Education</h1>
+  <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include storytelling, discussion, teaching, training, and directed research. Education frequently takes place under the guidance of educators, but learners may also educate themselves.
+  Education can take place in formal or informal settings and any experience that has a formative effect on the way one thinks, feels, or acts may be considered educational. The methodology of teaching is called pedagogy.
+
+Education is commonly divided formally into such stages as preschool or kindergarten, primary school, secondary school and then college, university, or apprenticeship.
+
+A right to education has been recognized by some governments and the United Nations. In most regions, education is compulsory up to a certain age.
+    <img alt="img" src="data:image/jpeg;base64,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" width="460" height="345">
+
+</p>
+</div>
+
+<div class="col-3 right">
+  <div class="aside">
+    <h2>What?</h2>
+    <p>Chania is a city on the island of Crete.</p>
+    <h2>Where?</h2>
+    <p>Crete is a Greek island in the Mediterranean Sea.</p>
+    <h2>How?</h2>
+    <p>You can reach Chania airport from all over Europe.</p>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
